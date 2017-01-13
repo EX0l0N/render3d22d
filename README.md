@@ -25,6 +25,7 @@ but it offers the possibility to develop (and debug) a native C application, whi
 - the C source code
 - a binary for linux-x64 (you need to have libSDL1.2 and libSDL_image installed)
 - a binary for win32 and support libs (just checkout the whole directory)
+- the HTML/JS files used for the live demo
 
 ## how to compile
 *No, there is no makefile!* (if anyone is willing to write one, I'll include it)
