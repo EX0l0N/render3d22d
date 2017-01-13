@@ -37,5 +37,7 @@ SDL based binary (provided you have dev packages for libSDL and libSDL_image ins
 Compile to HTML/JS unsing the
 [Emscripten SDK](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html#sdk-download-and-install):
 
-    emcc -O3 -Wall -Werror -pedantic-errors -std=c99 -D_GNU_SOURCE=1 -D_REENTRANT -s TOTAL_MEMORY=32000000 \
-    render.c mat?.c quat.c vec?.c -o index.html --use-preload-plugins --preload-file "./color_map_2048.jpg"
+    emcc -O3 -Wall -Werror -pedantic-errors -std=c99 \
+    -D_GNU_SOURCE=1 -D_REENTRANT -s TOTAL_MEMORY=32000000 \
+    render.c mat?.c quat.c vec?.c -o index.html \
+    --use-preload-plugins --preload-file "./color_map_2048.jpg"
